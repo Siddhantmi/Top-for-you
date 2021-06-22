@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+
+  /* background-color: #ffff; */
+}
+p {
+  margin: 0 5%;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 400;
+  color: rgba(28, 9, 80, 1);
+}
+/* header starts */
+.parent {
+  position: sticky;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  background-color: #ffff;
+  color: black;
+  box-shadow: 0 20px 30px 0 rgba(28, 9, 80, 0.05);
+  z-index: 100;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12%;
+  background-color: rgba(255, 255, 255, 0.287);
+  align-items: center;
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.title {
+  padding-right: 500px;
+}
+.navLinks li {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+.navLinks a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+
+/* dropdown button */
+.dropbtn {
+  color: rgb(12, 12, 12);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #ffff;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.09);
+  z-index: 1;
+  margin: 0px -10px;
+  border: none;
+  border-radius: 5px;
+  padding-top:25px;
+  padding-bottom: 15px;
+  width: 130%;
+  
+  
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  font-size: 17px;
+  margin:0 20px ;
+}
+
+.dropdownContent a:hover {
+  color: red;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+/* body */
+
+/* middle part of the body */
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: fit-content;
+  margin: 0px 20%;
+  margin-top: 130px;
+}
+.middle img {
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 6%;
+  box-shadow: 0 20px 30px 0 rgba(12, 12, 12, 0.3);
+}
+.bodyStarting h1 {
+  font-size: 60px;
+  line-height: 60px;
+  max-width: 960px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.author {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 6%;
+}
+.author span {
+  margin: 10px;
+  color: gray;
+  font-size: 1.3rem;
+}
+
+.bodyStarting p {
+  margin-bottom: 6%;
+}
+.number1 {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  margin: 0 5%;
+  margin-bottom: 6%;
+}
+.number1 h1 {
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.number1 img {
+  margin-top: 20px;
+}
+.number1 p {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.number1 h3 {
+  margin: 10px 0px;
+  font-size: 25px;
+}
+.number1 ul {
+  margin: 1px 2%;
+}
+.number1 li {
+  margin: 10px 0px;
+  font-size: 20px;
+}
+.number1 button {
+  background-color: crimson;
+  padding: 10px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 3px;
+  border-color: none;
+  font-size: 20px;
+  width: 180px;
+  align-items: center;
+  /* box-shadow: 0 20px 30px 0 rgba(12, 12, 12, 0.3); */
+}
+.number1 button:hover {
+  background-color: rgb(22, 141, 48);
+}
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5;
+  color: #000;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+.footer li {
+  list-style: none;
+}
+.footerNav li {
+  margin: 10px 20px;
+  display: inline-block;
+  font-size: 20px;
+}
+.footerIcons li {
+  margin: 10px 20px;
+  display: inline-block;
+  font-size: 30px;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+}
+.copyright li {
+  display: inline-block;
+}
+#copyrightlogo {
+  margin: 10px;
+  padding-top: 7px;
+}
+/* #copytext{
+    margin: 10px;
+}  */
+
+#moveToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 50px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#moveToTop:hover {
+  background-color: rgb(29, 132, 158);
+}
+.fas.fa-arrow-circle-up {
+  font-size: 30px;
+}
+.leftrightfixed {
+  position: fixed;
+  bottom: 30px;
+  left: 50px;
+  z-index: 99;
+  font-size: 60px;
+  border: none;
+  outline: none;
+  /* background-color: red; */
+  color: white;
+  cursor: pointer;
+}
+.fas.fa-bell {
+  color: red;
+  cursor: pointer;
+}
+.fas.fa-bell:hover {
+  color: rgb(29, 132, 158);
+}
