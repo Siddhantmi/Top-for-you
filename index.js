@@ -1,4 +1,14 @@
-//Get the button
+// mobile toggle button 
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+
+  // move to top button 
+  //Get the button
 var mybutton = document.getElementById("moveToTop");
 
 // When the user scrolls down 20px from the top of the document, show the button
@@ -17,6 +27,3 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-
-
