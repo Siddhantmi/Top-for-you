@@ -81,6 +81,9 @@ span {
   margin-bottom: 0;
   font-size: 26;
 }
+.number1 h1:hover {
+  color: tomato;
+}
 .number1 img {
   margin-top: 6%;
 }
